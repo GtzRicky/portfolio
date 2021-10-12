@@ -1,0 +1,21 @@
+.footer {
+    width: 90%;
+    margin: 2rem auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h5 {
+    border-bottom: solid 2px #282c34;
+    padding-bottom: 1%;
+}
+
+.icons {
+    margin-top: 1%;
+    font-size: 30px;
+}
+
+.icons svg {
+    margin: 0 30px;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,48 @@
+.about {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+    grid-template-rows: 1fr;
+}
+
+.description {
+    text-align: left;
+    font-size: 200%;
+}
+
+.description h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.description h4 {
+    margin-bottom: 15px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('../assets/pro_pic.jpeg');
+    background-size: cover;
+    margin: auto;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 1s;
+}
+
+.hero-icons svg {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+    filter: grayscale(25%);
+    -webkit-filter: grayscale(25%);
+    transition: 0.5s;
+}
