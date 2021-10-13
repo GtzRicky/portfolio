@@ -11,9 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(230, 230, 230);
-  background-image: url('./assets/61.png');
-  background-size: contain;
+  background: rgb(255,172,183);
+  background: radial-gradient(circle, rgba(255,172,183,1) 0%, rgba(255,206,237,1) 19%, rgba(246,246,246,1) 85%);
 }
 
 
