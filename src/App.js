@@ -1,25 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
-import About from './components/About';
-import Skills from './components/Skills';
+import Home from './pages/Home';
+import ProjectPage from './pages/ProjectPage';
+import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
+
 
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <React.Fragment>
+    <Router>
+      <ScrollToTop />
       <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={ProjectPage} />
+        <Route path="/contact" component={ContactPage} />
+      </Switch>
       <Footer />
-    </React.Fragment>
-
+    </Router>
   );
-}
+};
 
 export default App;
