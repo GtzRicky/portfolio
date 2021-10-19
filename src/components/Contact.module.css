@@ -1,6 +1,5 @@
 .contact {
     width: 90%;
-    height: 30rem;
     margin: 2rem auto;
     justify-content: center;
     display: grid;
@@ -15,6 +14,12 @@
 .contact-text p {
     margin: 1rem 0;
     margin-right: 1.5rem;
+}
+
+.form-container {
+    min-height: 30rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .contact-form {
@@ -80,6 +85,8 @@
 }
 
 .actions button {
+    width: 99.72px;
+    height: 39px;
     font: inherit;
     color: #000;
     cursor: pointer;
@@ -96,4 +103,75 @@
 
 .actions button span {
     margin-left: 0.5rem;
+}
+
+.error-text {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.invalid button{
+    cursor: not-allowed;
+}
+
+/* Tiny devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px){
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        min-height: 32rem;
+    }
+
+    .contact-text h2 {
+        text-align: center;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px){
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        min-height: 32rem;
+    }
+
+    .contact-text h2 {
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        min-height: 31rem;
+    }
+
+    .contact-text h2 {
+        text-align: justify;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+
+    .form-container {
+        min-height: 30rem;
+    }
+    
 }

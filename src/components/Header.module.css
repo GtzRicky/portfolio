@@ -1,13 +1,13 @@
 .navbar {
     height: 80px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #282c34f1;
+    background-color: #282c34f0;
     color: #FFF;
 }
 
@@ -17,10 +17,6 @@
     align-items: center;
     height: 80px;
     max-width: 1500px;
-}
-
-.nav-icon {
-    color: #FFF;
 }
 
 .nav-menu {
@@ -36,4 +32,196 @@
 .nav-menu a {
     text-decoration: none;
     color: #FFF;
+}
+
+.visit:after,
+.visit:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+  
+.visit:hover:after,
+.visit:hover:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-color: rgb(255, 255, 255);
+    transition: width 350ms ease-in-out;
+    width: 90%;
+}
+  
+.visit:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 90%;
+}
+
+/* Tiny devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+    .navbar {
+        background-color: transparent;
+        justify-content: right;
+        padding-right: 20px;
+    }
+
+    .nav-container {
+        margin-top: 4%;
+        align-items: unset;
+    }
+
+    .nav-menu {
+        display: none;
+
+    }
+    .nav-menu a {
+        color: #FFF;
+    }
+
+    .icon {
+        color: #000;
+        font-size: 150%;
+    }
+
+    .active-menu {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        right: -300px;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #282c344d;
+        animation: menudisplay 0.5s linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes menudisplay {
+        from {background-color: #282c34c0;}
+        to {background-color: #282c34f5;}
+    }
+
+    .active-menu li {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        font-size: 125%;
+    }
+
+    .active-menu li:hover:after,
+    .active-menu li:hover:before {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-color: rgb(255, 255, 255);
+        transition: width 350ms ease-in-out;
+        width: 50%;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .navbar {
+        background-color: transparent;
+        justify-content: right;
+        padding-right: 30px;
+    }
+
+    .nav-container {
+        margin-top: 4%;
+        align-items: unset;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-menu a {
+        color: #FFF;
+    }
+
+    .icon {
+        color: #000;
+        font-size: 150%;
+    }
+
+    .active-menu {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        right: -300px;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #282c344d;
+        animation: menudisplay 0.5s linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes menudisplay {
+        from {background-color: #282c34c0;}
+        to {background-color: #282c34f5;}
+    }
+
+    .active-menu li {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        font-size: 125%;
+    }
+
+    .active-menu li:hover:after,
+    .active-menu li:hover:before {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-color: rgb(255, 255, 255);
+        transition: width 350ms ease-in-out;
+        width: 50%;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .active-menu {
+        display: none;
+    }
+
+    .navbar {
+        background-color: #282c34f0;
+        justify-content: space-around;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 4em;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        color: #FFF;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .mobile {
+        display: none;
+    }
 }

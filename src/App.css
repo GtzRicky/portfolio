@@ -1,14 +1,13 @@
-.App {
-  text-align: center;
-  min-height: 100vh;
-  color: white;
-  justify-content: center;
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
 }

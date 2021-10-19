@@ -19,3 +19,17 @@
     margin: 0 30px;
     color: rgb(0, 0, 0);
 }
+
+/* Tiny devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+    .icons {
+        display: flex;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .icons {
+        display: block;
+    }
+}

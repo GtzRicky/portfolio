@@ -29,3 +29,37 @@
 .tech-card h4 {
     margin-top: 10px;
 }
+
+/* Tiny devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+    .tech {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    .tech {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .tech {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Large devices (tablets, 992px and up) */
+@media screen and (min-width: 992px) {
+    .tech {
+        margin: 1.5em auto 0;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
