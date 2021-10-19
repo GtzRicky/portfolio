@@ -42,13 +42,17 @@
     }
 
     .description {
-        text-align: justify;
+        text-align: left;
         font-size: 200%;
         line-height: 1.7cm;
     }
     
     .description h2 {
         text-align: center;
+    }
+
+    .description h4 {
+        text-align: left;
     }
 
     .hero-icons {
@@ -85,6 +89,10 @@
     
     .description h2 {
         text-align: center;
+    }
+
+    .description h4 {
+        text-align: left;
     }
 
     .hero-icons {

@@ -22,8 +22,19 @@
 
 /* Tiny devices (portrait phones, less than 576px) */
 @media screen and (max-width: 576px) {
+    .footer {
+        width: 100%;
+        margin: auto;
+    }
     .icons {
+        font-size: 20px;
+        overflow: hidden;
         display: flex;
+    }
+
+    .icons svg {
+        margin: 0 20px;
+        color: rgb(0, 0, 0);
     }
 }
 
