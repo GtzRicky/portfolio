@@ -26,6 +26,10 @@
     position: relative;
 }
 
+.tech-card img {
+    box-shadow: none;
+}
+
 .tech-card h4 {
     margin-top: 10px;
 }

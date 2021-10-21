@@ -13,7 +13,9 @@ const Projects = () => {
                 <Card className={classes['project-card']}>
                     <h2>MealsOrder</h2>
                     <div className={classes['pic-container']}>
-                        <img src='assets/projects/food-order.png' alt='meals-order'/>
+                        <a target='_blank' rel='noreferrer noopener' href='https://the-cocktails-wiki.netlify.app/' className={classes.visit}>
+                            <img src='assets/projects/food-order.png' alt='meals-order'/>
+                        </a>
                     </div>
                     <div className={classes['icons-container']}>
                         <p>
@@ -34,7 +36,9 @@ const Projects = () => {
                 <Card className={classes['project-card']}>
                     <h2>The Cocktail Wiki</h2>
                     <div className={classes['pic-container']}>
-                        <img src='assets/projects/cocktails-wiki.png' alt='cocktail-wiki'/>
+                        <a target='_blank' rel='noreferrer noopener' href='https://the-cocktails-wiki.netlify.app/' className={classes.visit}>
+                            <img src='assets/projects/cocktails-wiki.png' alt='cocktail-wiki'/>
+                        </a>
                     </div>
                     <div className={classes['icons-container']}>
                         <p>
@@ -55,7 +59,9 @@ const Projects = () => {
                 <Card className={classes['project-card']}>
                     <h2>Smart Expenses Tracker</h2>
                     <div className={classes['pic-container']}>
-                        <img src='assets/projects/expense-tracker.png' alt='expenses-tracker'/>
+                        <a target='_blank' rel='noreferrer noopener' href='https://smart-expense-tracker.netlify.app/' className={classes.visit}>
+                            <img src='assets/projects/expense-tracker.png' alt='expenses-tracker'/>
+                        </a>
                     </div>
                     <div className={classes['icons-container']}>
                         <p>
@@ -76,7 +82,9 @@ const Projects = () => {
                 <Card className={classes['project-card']}>
                     <h2>Weather App</h2>
                     <div className={classes['pic-container']}>
-                        <img src='assets/projects/weather-app.png' alt='weather-app'/>
+                        <a target='_blank' rel='noreferrer noopener' href='https://react-weatherandgeoloc-app.netlify.app/' className={classes.visit}>
+                            <img src='assets/projects/weather-app.png' alt='weather-app'/>
+                        </a>
                     </div>
                     <div className={classes['icons-container']}>
                         <p>

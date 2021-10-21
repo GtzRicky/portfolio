@@ -1,5 +1,5 @@
 img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .projects {
@@ -22,10 +22,12 @@ img {
     width: auto;
     text-align: center;
     background-color: #282c34;
+    border-radius: 0.25rem;
 }
 
 .pic-container img {
     margin-top: 4px;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .project-card {
@@ -124,6 +126,12 @@ img {
         text-align: center;
     }
 
+    .icons-container p {
+        font-size: 115%;
+        text-align: center;
+        line-height: 0.8cm;
+    }
+
     .project-card {
         max-width: 100%;
     }
@@ -137,6 +145,12 @@ img {
         text-align: center;
     }
 
+    .icons-container p {
+        font-size: 115%;
+        text-align: center;
+        line-height: 1cm;
+    }
+
     .project-card {
         max-width: 100%;
     }
@@ -148,6 +162,12 @@ img {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    .icons-container p {
+        font-size: 115%;
+        text-align: center;
+        line-height: 1cm;
     }
 
     .project-card {
@@ -164,8 +184,11 @@ img {
     }
     
     .icons-container p {
+        text-align: left;
         margin-top: 20px;
         padding-right: 15px;
+        font-size: 110%;
+        line-height: 1cm;
     }
 
     .project-card {
