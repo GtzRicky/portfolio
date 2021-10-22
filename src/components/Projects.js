@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from '../UI/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faNode, faReact, faGithub, faEvernote } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faNode, faReact, faGithub, faEvernote, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faAtom } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './Projects.module.css';
 
@@ -12,7 +12,7 @@ const Projects = () => {
             <h2>Recent projects</h2>
             <div className={classes['projects-container']}>
             <Card className={classes['project-card']}>
-                    <h2>WhatssUpp API</h2>
+                    <h2>WhatsUpp API</h2>
                     <div className={classes['pic-container']}>
                         <a target='_blank' rel='noreferrer noopener' href='https://academlo-wa-api.herokuapp.com/api-docs/' className={classes.visit}>
                             <img src='assets/projects/whatsupp-api.png' alt='whatsupp-api'/>
@@ -55,6 +55,26 @@ const Projects = () => {
                     <div className={classes.links}>
                         <a target='_blank' rel='noreferrer noopener' href='https://github.com/GtzRicky/The-Cocktails-Wiki' className={classes.github}><FontAwesomeIcon icon={faGithub} /></a>
                         <a target='_blank' rel='noreferrer noopener' href='https://the-cocktails-wiki.netlify.app/' className={classes.visit}>Visit</a>
+                    </div>
+                </Card>
+                <Card className={classes['project-card']}>
+                    <h2>WhatsUpp</h2>
+                    <div className={classes['pic-container']}>
+                            <img src='assets/projects/whatsupp-front.png' alt='whatsupp'/>
+                    </div>
+                    <div className={classes['icons-container']}>
+                        <p>
+                            Messaging app clone frontend project —connected with the Whatsupp API— built in React-Redux, created as part of the final fullstack project for the React and NodeJs modules of Academlo Bootcamp. <strong>Under development.</strong>
+                        </p>
+                        <div className={classes.techs}>
+                            <FontAwesomeIcon icon={faReact} />
+                            <FontAwesomeIcon icon={faBootstrap} />
+                            <FontAwesomeIcon icon={faJs} />
+                            <FontAwesomeIcon icon={faAtom} />
+                        </div>
+                    </div>
+                    <div className={classes.links}>
+                        <a target='_blank' rel='noreferrer noopener' href='https://github.com/GtzRicky/whatsupp-frontend' className={classes.github}><FontAwesomeIcon icon={faGithub} /></a>
                     </div>
                 </Card>
                 <Card className={classes['project-card']}>
