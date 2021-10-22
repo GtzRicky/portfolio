@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '../UI/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faNodeJs, faReact, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faNode, faReact, faGithub, faEvernote } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './Projects.module.css';
 
@@ -10,27 +11,27 @@ const Projects = () => {
         <section className={classes.projects}>
             <h2>Recent projects</h2>
             <div className={classes['projects-container']}>
-                <Card className={classes['project-card']}>
-                    <h2>MealsOrder</h2>
+            <Card className={classes['project-card']}>
+                    <h2>WhatssUpp API</h2>
                     <div className={classes['pic-container']}>
-                        <a target='_blank' rel='noreferrer noopener' href='https://the-cocktails-wiki.netlify.app/' className={classes.visit}>
-                            <img src='assets/projects/food-order.png' alt='meals-order'/>
+                        <a target='_blank' rel='noreferrer noopener' href='https://academlo-wa-api.herokuapp.com/api-docs/' className={classes.visit}>
+                            <img src='assets/projects/whatsupp-api.png' alt='whatsupp-api'/>
                         </a>
                     </div>
                     <div className={classes['icons-container']}>
                         <p>
-                            Food order app where users can add/remove meals (fetched from an API) to/from a cart and confirm an order by submitting a form which is sent to a DB.  
+                            Messaging app API, built with NodeJS, Express, JWT and connected to a PostgreSQL database via Sequelize. Test Driven Development using Jest.
                         </p>
                         <div className={classes.techs}>
-                            <FontAwesomeIcon icon={faHtml5}/>
-                            <FontAwesomeIcon icon={faCss3Alt}/>
-                            <FontAwesomeIcon icon={faJs}/>
-                            <FontAwesomeIcon icon={faReact}/>
+                            <FontAwesomeIcon icon={faNode} />
+                            <FontAwesomeIcon icon={faDatabase} />
+                            <FontAwesomeIcon icon={faJs} />
+                            <FontAwesomeIcon icon={faEvernote} />
                         </div>
                     </div>
                     <div className={classes.links}>
-                        <a target='_blank' rel='noreferrer noopener' href='https://github.com/GtzRicky/food-order-app' className={classes.github}><FontAwesomeIcon icon={faGithub} /></a>
-                        <a target='_blank' rel='noreferrer noopener' href='https://react-foods.netlify.app/' className={classes.visit}>Visit</a>
+                        <a target='_blank' rel='noreferrer noopener' href='https://github.com/GtzRicky/boilerplate-sequelize' className={classes.github}><FontAwesomeIcon icon={faGithub} /></a>
+                        <a target='_blank' rel='noreferrer noopener' href='https://academlo-wa-api.herokuapp.com/api-docs/' className={classes.visit}>Visit</a>
                     </div>
                 </Card>
                 <Card className={classes['project-card']}>
@@ -54,6 +55,29 @@ const Projects = () => {
                     <div className={classes.links}>
                         <a target='_blank' rel='noreferrer noopener' href='https://github.com/GtzRicky/The-Cocktails-Wiki' className={classes.github}><FontAwesomeIcon icon={faGithub} /></a>
                         <a target='_blank' rel='noreferrer noopener' href='https://the-cocktails-wiki.netlify.app/' className={classes.visit}>Visit</a>
+                    </div>
+                </Card>
+                <Card className={classes['project-card']}>
+                    <h2>MealsOrder</h2>
+                    <div className={classes['pic-container']}>
+                        <a target='_blank' rel='noreferrer noopener' href='https://the-cocktails-wiki.netlify.app/' className={classes.visit}>
+                            <img src='assets/projects/food-order.png' alt='meals-order'/>
+                        </a>
+                    </div>
+                    <div className={classes['icons-container']}>
+                        <p>
+                            Food order app where users can add/remove meals (fetched from an API) to/from a cart and confirm an order by submitting a form which is sent to a DB.  
+                        </p>
+                        <div className={classes.techs}>
+                            <FontAwesomeIcon icon={faHtml5}/>
+                            <FontAwesomeIcon icon={faCss3Alt}/>
+                            <FontAwesomeIcon icon={faJs}/>
+                            <FontAwesomeIcon icon={faReact}/>
+                        </div>
+                    </div>
+                    <div className={classes.links}>
+                        <a target='_blank' rel='noreferrer noopener' href='https://github.com/GtzRicky/food-order-app' className={classes.github}><FontAwesomeIcon icon={faGithub} /></a>
+                        <a target='_blank' rel='noreferrer noopener' href='https://react-foods.netlify.app/' className={classes.visit}>Visit</a>
                     </div>
                 </Card>
                 <Card className={classes['project-card']}>
