@@ -94,6 +94,7 @@
     border: solid 1px;
     border-radius: 25px;
     padding: 0.5rem 1.2rem;
+    display: flex;
 }
 
 .actions button:hover {
@@ -101,8 +102,8 @@
     color: rgb(240, 240, 240);
 }
 
-.actions button span {
-    margin-left: 0.5rem;
+.button-container span {
+    margin-right: 0.5rem;
 }
 
 .error-text {
@@ -133,7 +134,14 @@
     .contact-text h2 {
         text-align: center;
     }
-    
+
+    .button-container {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -149,6 +157,14 @@
 
     .contact-text h2 {
         text-align: center;
+    }
+
+    .button-container {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -166,6 +182,14 @@
     .contact-text h2 {
         text-align: justify;
     }
+
+    .button-container {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -177,6 +201,14 @@
 
     .form-container {
         min-height: 30rem;
+    }
+
+    .button-container {
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
 }

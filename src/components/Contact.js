@@ -129,8 +129,8 @@ const Contact = () => {
                     <button>
                         {loading
                             ? <SpinnerCircular size='25px' color='#000' secondaryColor='#6b6b6b' />
-                            : <><FontAwesomeIcon icon={faPaperPlane} className={'submit'}/>
-                                <span>Send</span></>
+                            : <div div className={classes['button-container']}><span>Send</span><FontAwesomeIcon icon={faPaperPlane} className={'submit'}/>
+                                </div>
                         }
                     </button>
                 </div>
