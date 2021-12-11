@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from '../UI/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faNode, faReact, faGithub, faEvernote, faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faAtom } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faNode, faReact, faGithub, faEvernote, faBootstrap, faStripe } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faAtom, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './Projects.module.css';
 
@@ -12,6 +12,28 @@ const Projects = () => {
             <h2>Recent projects</h2>
             <div className={classes['projects-container']}>
             <Card className={classes['project-card']}>
+                    <h2>Fundación Posadas</h2>
+                    <div className={classes['pic-container']}>
+                        <a target='_blank' rel='noreferrer noopener' href='https://fundacionposadas.com/' className={classes.visit}>
+                            <img src='assets/projects/posadas.png' alt='Fundación Posadas'/>
+                        </a>
+                    </div>
+                    <div className={classes['icons-container']}>
+                        <p>
+                            Fundación Posadas' landing page. This was my first profesional project. The site is implemented with React.js, react-router-dom and react-transition-group. Styling made with CSS modules and CSS-in-JS (styled-components). Donations payment form powered by Stripe. Custom SMTP service built in EmailJs. Translation was created using i18next.
+                        </p>
+                        <div className={classes.techs}>
+                            <FontAwesomeIcon icon={faReact} />
+                            <FontAwesomeIcon icon={faStripe} />
+                            <FontAwesomeIcon icon={faNode} />
+                            <FontAwesomeIcon icon={faMailBulk} />
+                        </div>
+                    </div>
+                    <div className={classes.links}>
+                        <a target='_blank' rel='noreferrer noopener' href='https://fundacionposadas.com/' className={classes.visit}>Visit</a>
+                    </div>
+                </Card>
+                <Card className={classes['project-card']}>
                     <h2>WhatsUpp API</h2>
                     <div className={classes['pic-container']}>
                         <a target='_blank' rel='noreferrer noopener' href='https://academlo-wa-api.herokuapp.com/api-docs/' className={classes.visit}>
